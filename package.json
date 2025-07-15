@@ -1,0 +1,44 @@
+{
+  "name": "dev-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+		"build": "tsc",
+		"dev": "nodemon ./src/index.ts",
+		"test": "jest",
+		"check-packages": "npx npm-check -u -E",
+		"refresh-packages": "rm -rf node_modules && rm -rf package-lock.json && npm i"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@mr:MomoRazor/dev-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+		"@types/morgan": "1.9.10",
+		"@types/jest": "30.0.0",
+		"@types/cors": "2.8.19",
+    "@types/express": "5.0.3",
+    "@types/node": "24.0.14",
+    "dotenv": "17.2.0",
+    "eslint": "9.31.0",
+    "express": "5.1.0",
+    "nodemon": "3.1.10",
+    "npm": "11.4.2",
+    "prettier": "3.6.2",
+    "ts-node": "10.9.2",
+    "typescript": "5.8.3",
+		"jest": "30.0.4",
+		"ts-jest": "29.4.0"
+  },
+  "dependencies": {
+		"cors": "2.8.5",
+		"express": "5.1.0",
+		"morgan": "1.10.0"
+  }
+}
