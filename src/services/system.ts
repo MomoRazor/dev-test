@@ -37,7 +37,7 @@ export const SystemService = (args: {
     const getSupporterDonations = async (args?: {
         withExport?: boolean
     }) => {
-        const {withExport } = args || {};
+        const {withExport= true } = args || {};
 
         const supportersResult = await fewfarService.getSupporters();
 

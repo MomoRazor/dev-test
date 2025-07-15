@@ -10,7 +10,7 @@ export const SystemRouter = (args: {
     //-------------------------------------------------------------------------------------------------------
 
     router.get('/supporter-donations', async (req, res) => {
-        const { useExport=false } = req.query
+        const { useExport=true } = req.query
 
         try{
             const data = await systemService.getSupporterDonations({ withExport: useExport ? true : false })
